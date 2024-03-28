@@ -1,5 +1,7 @@
 import 'package:ever_rest/firebase_options.dart';
+import 'package:ever_rest/screens/home_screen.dart';
 import 'package:ever_rest/screens/login_screen.dart';
+import 'package:ever_rest/screens/register_screen.dart';
 import 'package:ever_rest/utils/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -21,10 +23,25 @@ class MyApp extends StatelessWidget {
       title: 'EverRest',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: CustomColors.primary),
+        appBarTheme: AppBarTheme(
+          backgroundColor: CustomColors.primary,
+          foregroundColor: Colors.white,
+          toolbarHeight: 64,
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      routes: {
+        // '/': (context) => HomeScreen(),
+        '/login': (context) => LoginScreen(),
+        '/register': (context) => RegisterScreen(),
+      },
+      home: HomeScreen(),
     );
   }
 }

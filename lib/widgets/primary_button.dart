@@ -1,11 +1,11 @@
 import 'package:ever_rest/utils/theme.dart';
 import 'package:flutter/material.dart';
 
-class CustomFIlledButton extends StatelessWidget {
+class PrimaryButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final IconData icon;
   final String label;
-  CustomFIlledButton({
+  PrimaryButton({
     super.key,
     required this.onPressed,
     required this.icon,
