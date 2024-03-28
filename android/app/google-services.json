@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "428528352300",
+    "project_id": "everrest-1a452",
+    "storage_bucket": "everrest-1a452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428528352300:android:a091b55cbf098bdbc4e589",
+        "android_client_info": {
+          "package_name": "com.example.ever_rest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3JGUmGTERPfLaQerXpd51vCklFWHQZnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
