@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'EverRest',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: CustomColors.primary),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: CustomColors.primary,
           foregroundColor: Colors.white,
           toolbarHeight: 64,

@@ -90,8 +90,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.all(20),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.all(20),
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/scene-1.jpg'),
               fit: BoxFit.cover,
@@ -101,7 +101,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                padding: EdgeInsets.all(28),
+                padding: const EdgeInsets.all(28),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.9),
                   borderRadius: BorderRadius.circular(10),
@@ -127,7 +127,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(16),
@@ -140,7 +140,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Form(
                       key: formKey,
                       child: Column(
@@ -153,7 +153,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             keyboardType: TextInputType.name,
                             prefixIcon: Icon(Icons.person_outline),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           CustomFormField(
                             hintText: 'Email',
                             controller: _emailController,
@@ -162,7 +162,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             keyboardType: TextInputType.emailAddress,
                             prefixIcon: Icon(Icons.email_outlined),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           CustomFormField(
                             obscureText: _isObscure,
                             controller: _passwordController,
@@ -180,7 +180,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           CustomFormField(
                             obscureText: _isConfirmObscure,
                             controller: _confirmPasswordController,
@@ -197,13 +197,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 30),
+                          const SizedBox(height: 30),
                           PrimaryButton(
                             onPressed: submit,
                             label: 'Register',
                             icon: Icons.account_circle_outlined,
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           AccentButton(
                             onPressed: () {
                               Navigator.pushReplacementNamed(context, '/login');

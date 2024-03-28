@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.all(20),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/scene-2.jpg'),
             fit: BoxFit.cover,
@@ -95,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Container(
                     width: double.infinity,
                     padding: EdgeInsets.all(16),
@@ -108,7 +108,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Form(
                     key: formKey,
                     child: Column(
@@ -121,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           keyboardType: TextInputType.emailAddress,
                           prefixIcon: Icon(Icons.email_outlined),
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         CustomFormField(
                           obscureText: _isObscure,
                           controller: _passwordController,
@@ -139,13 +139,13 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 30),
+                        const SizedBox(height: 30),
                         PrimaryButton(
                           onPressed: submit,
                           label: 'Login',
                           icon: Icons.login,
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         AccentButton(
                           onPressed: () {
                             Navigator.pushReplacementNamed(
