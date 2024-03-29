@@ -1,7 +1,9 @@
 import 'package:ever_rest/screens/partials/todo_box.dart';
 import 'package:ever_rest/utils/config.dart';
+import 'package:ever_rest/utils/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -64,6 +66,33 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TodoBox(),
+              const SizedBox(height: 32),
+              Chip(
+                avatar: Icon(
+                  CupertinoIcons.list_bullet_indent,
+                ),
+                label: Text(
+                  'Pending Reservations',
+                  style: CustomTextStyle.primary,
+                ),
+              ),
+              const SizedBox(height: 16),
+              ListTile(
+                onTap: () {},
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(color: CustomColors.primary),
+                ),
+                leading: Icon(
+                  CupertinoIcons.person,
+                ),
+                title: Text(
+                  'John Smith - ${DateFormat('EEE, dd MMM yyyy').format(DateTime.now())}',
+                ),
+                subtitle: Text('Evergreen Cemetery'),
+                trailing: Icon(
+                  CupertinoIcons.chevron_forward,
+                ),
+              ),
             ],
           ),
         ),

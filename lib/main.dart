@@ -2,6 +2,7 @@ import 'package:ever_rest/firebase_options.dart';
 import 'package:ever_rest/screens/home_screen.dart';
 import 'package:ever_rest/screens/login_screen.dart';
 import 'package:ever_rest/screens/register_screen.dart';
+import 'package:ever_rest/screens/reserve_screen.dart';
 import 'package:ever_rest/utils/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         // '/': (context) => HomeScreen(),
         '/login': (context) => LoginScreen(),
         '/register': (context) => RegisterScreen(),
+        '/reserve': (context) => ReserveScreen(),
       },
       home: HomeScreen(),
     );

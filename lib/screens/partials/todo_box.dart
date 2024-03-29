@@ -48,7 +48,9 @@ class TodoBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TodoButton(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/reserve');
+                },
                 icon: CupertinoIcons.calendar_today,
                 label: 'Reserve',
               ),
@@ -59,12 +61,12 @@ class TodoBox extends StatelessWidget {
               ),
               TodoButton(
                 onTap: () {},
-                icon: CupertinoIcons.creditcard,
-                label: 'Payment',
+                icon: CupertinoIcons.doc_text,
+                label: 'Taxes',
               ),
               TodoButton(
                 onTap: () {},
-                icon: CupertinoIcons.doc_plaintext,
+                icon: CupertinoIcons.clock,
                 label: 'History',
               ),
             ],
